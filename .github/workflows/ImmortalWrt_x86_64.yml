@@ -44,7 +44,7 @@ jobs:
         REPO_URL: https://github.com/immortalwrt/immortalwrt
         REPO_BRANCH: v23.05.1
       run: |
-        git clone -b $REPO_BRANCH --single-branch --filter=blob:none $REPO_URL
+        git clone -b $REPO_BRANCH --single-branch --filter=blob:none $REPO_URL openwrt
         cd openwrt
         echo "src-git luci_app_mosdns https://github.com/sbwml/luci-app-mosdns.git;v5" >> ./feeds.conf.default
         
